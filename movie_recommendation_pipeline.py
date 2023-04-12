@@ -8,7 +8,7 @@ import requests
 movie_info_df = pd.DataFrame.from_dict(pickle.load(open('.\pickle files\informative_movies_dict.pkl', 'rb')))
 new_df = pd.DataFrame.from_dict(pickle.load(open('.\pickle files\movies_dict.pkl', 'rb')))
 
-API_KEY = 'bf0bf593d186efd07befa789e039c13b'
+API_KEY = st.secrets['secrets']["auth_token"]
 GENRES_LIST = ['Action', 'Adventure', 'Animation', 'Comedy', 'Crime', 'Documentary', 'Drama', 'Family', 'Fantasy', 'Foreign', 'History', 'Horror', 'Music', 'Mystery', 'Romance', 'Science Fiction', 'TV Movie', 'Thriller', 'War', 'Western']
 
 
