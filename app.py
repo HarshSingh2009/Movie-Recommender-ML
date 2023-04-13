@@ -55,7 +55,7 @@ with st.sidebar:
 
 if selected == 'Recommend Movies':
     st.title('Movie Recommender System : ')
-    # st.markdown(hide_streamlit_menu, unsafe_allow_html=True)
+    st.markdown(hide_streamlit_menu, unsafe_allow_html=True)
 
     selected_movie_name = st.selectbox('Which movie do you want this system to recommend : ', new_df['title'].values)
     recommend_btn = st.button(label='Recommend')
@@ -87,7 +87,7 @@ if selected == 'Recommend Movies':
 
 else:
     st.title('Search Movies through their Genres')
-    # st.markdown(hide_streamlit_menu, unsafe_allow_html=True)
+    st.markdown(hide_streamlit_menu, unsafe_allow_html=True)
     get_free_space()
     st.subheader('Not getting the Movie Name but know it\'s genres,')
     st.subheader('Search here : ')
