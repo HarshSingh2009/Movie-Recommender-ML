@@ -5,3 +5,4 @@ streamlit
 streamlit_option_menu
 cryptography
 os
+pip==21.0.1
