@@ -4,12 +4,13 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
-
+import os
 
 movie_info_df = pd.DataFrame.from_dict(pickle.load(open('./pickle files/informative_movies_dict.pkl', 'rb')))
 new_df = pd.DataFrame.from_dict(pickle.load(open('./pickle files/movies_dict.pkl', 'rb')))
 
-API_KEY = st.secrets['secrets']["auth_token"]
+# API_KEY = st.secrets['secrets']["auth_token"]
+API_KEY = os.environ.get('auth_token')
 GENRES_LIST = ['Action', 'Adventure', 'Animation', 'Comedy', 'Crime', 'Documentary', 'Drama', 'Family', 'Fantasy', 'Foreign', 'History', 'Horror', 'Music', 'Mystery', 'Romance', 'Science Fiction', 'TV Movie', 'Thriller', 'War', 'Western']
 
 

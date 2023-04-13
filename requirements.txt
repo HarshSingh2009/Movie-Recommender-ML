@@ -3,3 +3,5 @@ requests
 scikit_learn
 streamlit
 streamlit_option_menu
+cryptography
+os
