@@ -1,3 +1,4 @@
+pip==23.0.1
 pandas
 requests
 scikit_learn
@@ -5,4 +6,3 @@ streamlit
 streamlit_option_menu
 cryptography
 os
-pip==21.0.1
