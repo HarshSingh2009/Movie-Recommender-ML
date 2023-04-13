@@ -17,8 +17,8 @@ footer {
 </style>
 '''
 
-movie_info_df = pd.DataFrame.from_dict(pickle.load(open('pickle files\informative_movies_dict.pkl', 'rb')))
-new_df = pd.DataFrame.from_dict(pickle.load(open('pickle files\movies_dict.pkl', 'rb')))
+movie_info_df = pd.DataFrame.from_dict(pickle.load(open('./pickle files/informative_movies_dict.pkl', 'rb')))
+new_df = pd.DataFrame.from_dict(pickle.load(open('./pickle files/movies_dict.pkl', 'rb')))
 GENRES_LIST = ['Action', 'Adventure', 'Animation', 'Comedy', 'Crime', 'Documentary', 'Drama', 'Family', 'Fantasy', 'Foreign', 'History', 'Horror', 'Music', 'Mystery', 'Romance', 'Science Fiction', 'TV Movie', 'Thriller', 'War', 'Western']
 
 movie_recommender = RecommendMovie()
@@ -44,7 +44,6 @@ def get_free_space():
     st.text("")
     st.text("")
     st.text("")
-
 ## App building 
 
 with st.sidebar:
