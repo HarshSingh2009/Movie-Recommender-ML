@@ -5,7 +5,7 @@ import pandas as pd
 import pickle
 
 # Customizing the web app
-st.set_page_config(page_title='Movie Mingle', page_icon='😎')
+st.set_page_config(page_title='Movie Mood', page_icon='😎')
 hide_streamlit_menu = '''
 <style>
 #MainMenu {
@@ -32,6 +32,7 @@ def get_recommended_movie_columns(names, poster_paths):
     col3.image(poster_paths[2])
     col3.text(names[2])
     get_free_space()
+    get_free_space()
     c4, c5, c6 = st.columns(3)
     c4.image(poster_paths[3])
     c4.text(names[3])
@@ -48,7 +49,7 @@ def get_free_space():
 
 with st.sidebar:
     selected = option_menu(
-        menu_title='Toggle Options',
+        menu_title='Movie Mood 😎',
         options=['Recommend Movies', 'Search Movies']        
     )
 
