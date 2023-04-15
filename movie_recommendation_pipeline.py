@@ -13,11 +13,11 @@ new_df = pd.DataFrame.from_dict(pickle.load(open('./pickle files/movies_dict.pkl
 
 # Define constants
 # Load API key from environment variable
-try:
+if os.getenv('auth_token') != None:
     API_KEY = os.getenv('auth_token')
-except:
+else:
     API_KEY = st.secrets['secrets']["auth_token"]
-    
+
 GENRES_LIST = ['Action', 'Adventure', 'Animation', 'Comedy', 'Crime', 'Documentary', 'Drama', 'Family', 'Fantasy', 'Foreign', 'History', 'Horror', 'Music', 'Mystery', 'Romance', 'Science Fiction', 'TV Movie', 'Thriller', 'War', 'Western']
 
 # Initialize count vectorizer and calculate cosine similarity matrix
