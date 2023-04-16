@@ -1,6 +1,7 @@
 # Movie-Recommender-System-ML
 ### A Movie / Product Recommendation system using ML that can recommend movies, also with a new feature, that you can use to search your movies, based on the genres of the movies
 
+## [Link for App](https://harshsingh2009-movie-recommender-ml-app-j1fcvq.streamlit.app/)
 
 ## Software requirements and tools
 1. [Python](https://www.python.org/downloads/)
